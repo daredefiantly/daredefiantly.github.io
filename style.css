@@ -3,9 +3,12 @@ body {
     font-size: 18px;
     margin: 0;
     overflow-x: hidden;
+    width: 100%;
 }
 
-
+#container {
+    max-width: 1920px;
+}
 
 #homecontainer h1 {
     margin: 0;
@@ -71,6 +74,7 @@ h2 {
     width: 300px;
     padding-left: 120px;
     padding-right: 250px;
+    text-align:left;
 }
 
 .card img {
@@ -367,4 +371,16 @@ footer {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+}
+
+#contactme {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 200;
+    margin: 0 auto;
+    box-shadow: 0px 10px 25px 5px #888888;
+    padding-top: 1em;
+    width: 95%;
+    background-color: #ffffff;
+    color: #000000;
+    padding-bottom: 25px;
 }
