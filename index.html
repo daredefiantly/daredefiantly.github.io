@@ -9,6 +9,7 @@
     <meta name="author" content="Noah Peloquin">
     <meta name="description" content="Home Page">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Exo+2:100,100i,200,200i,300,300i,400|Poppins:400" rel="stylesheet">
+    <script src="nav.js"></script>
 </head>
 
 <body>
@@ -22,6 +23,19 @@
                     <li><a href="#contactme">CONTACT</a></li>
                 </ul>
                 <img src="resources/logo_small.png" alt="logosmall" />
+            </div>
+
+            <a href="javascript:void(0)" class="openbtn" onclick="openNav()">&#9776;</a>
+            <div id="mobileNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlayContent">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#me">ABOUT ME</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#contactme">CONTACT</a></li>
+                    </ul>
+                </div>
             </div>
             <h1>PELOQUIN STUDIO</h1>
             <h2>Portfolio for 2018</h2>
@@ -133,10 +147,10 @@
             <div id="contactme">
                 <div class="card">
                     <h1>Contact Info</h1>
-                    <div class="cardtext">
+                    <div id="contactp" class="cardtext">
                         <p><em>Email:</em> wundrfull.us@gmail.com</p>
                     </div>
-                    <div class="cardtext">
+                    <div id="contactp" class="cardtext">
                         <p><em>Instagram:</em> instagram.com/wundrfull</p>
                     </div>
                 </div>
@@ -148,12 +162,12 @@
                 <p>&#64; 2018, Noah Peloquin. All Rights Reserved.</p>
             </div>
             <div class="footerinfo">
-                <p><a href="#">Home</a></p>
-                <p><a href="#">About Me</a></p>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="#me">About Me</a></p>
             </div>
             <div class="footerinfo">
-                <p><a href="#">Contact</a></p>
-                <p><a href="#">Portfolio</a></p>
+                <p><a href="#contactme">Contact</a></p>
+                <p><a href="#portfolio">Portfolio</a></p>
             </div>
         </footer>
     </div>

@@ -1,7 +1,8 @@
-html, body {
+html,
+body {
     font-family: 'Archivo Black', sans-serif;
     font-size: 18px;
-    margin: 0;
+    margin: 0 auto;
     overflow-x: hidden;
     width: 100%;
     scroll-behavior: smooth;
@@ -10,7 +11,7 @@ html, body {
 #container {
     max-width: 1920px;
     margin: 0 auto;
-    
+
 }
 
 #homecontainer h1 {
@@ -77,7 +78,7 @@ h2 {
     width: 300px;
     padding-left: 120px;
     padding-right: 250px;
-    text-align:left;
+    text-align: left;
 }
 
 .card img {
@@ -172,27 +173,27 @@ h2 {
     right: 3%;
 }
 
-ul {
+#nav ul {
     margin: 0 auto;
     list-style-type: none;
     padding-right: 150px;
     padding-top: 75px;
 }
 
-ul li {
+#nav ul li {
     display: inline-block;
     text-align: right;
     padding-right: 120px;
 }
 
-ul li a {
+#nav ul li a {
     font-family: 'Exo 2', sans-serif;
     text-decoration: none;
     color: #ffffff;
     transition: all .25s;
 }
 
-ul li a:hover {
+#nav ul li a:hover {
     border-bottom: solid 2px #4f1d1e;
     display: inline;
     padding-bottom: 2px;
@@ -363,11 +364,11 @@ footer {
     width: 400px;
 }
 
-.portfolioCard h3{
+.portfolioCard h3 {
     font-family: 'Poppins', sans-serif;
 }
 
-.portfolioCard p{
+.portfolioCard p {
     font-family: 'Exo 2', sans-serif;
     text-align: justify;
 }
@@ -388,4 +389,360 @@ footer {
     background-color: #ffffff;
     color: #000000;
     padding-bottom: 25px;
+}
+
+#mobile-nav {
+    opacity: 0;
+}
+
+/**Media Query**/
+
+@media only screen and (max-width: 415px) {
+    html,
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #container {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    #quoteblock {
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 200;
+        margin: 0 auto;
+        box-shadow: 0px 10px 25px 5px #888888;
+        padding-top: 1em;
+        width: 95%;
+        max-height: 425px;
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    #quoteblock p {
+        text-align: justify;
+        padding-left: 50px;
+        font-size: 1.13em;
+        padding-right: 50px;
+    }
+
+    #quoteblock h1 {
+        text-align: left;
+        font-size: 5em;
+        padding-left: 25px;
+        color: #9f9fa0;
+    }
+
+    #quoteblock h2 {
+        opacity: 0;
+    }
+
+    #quoteblock h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.25em;
+        text-align: left;
+        margin: 0;
+        padding-left: 50px
+    }
+
+    #quoteblock h4 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        text-align: right;
+        padding-right: 50px;
+        margin: 0;
+        padding-bottom: 2em;
+    }
+
+    #plant {
+        width: 40%;
+    }
+
+    #plant img {
+        display: none;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        transition: all 1s;
+        clip: rect(0px, 450px, 700px, 0px);
+    }
+
+    #nav {
+        display: none;
+    }
+
+    #mobileNav {
+        position: block;
+        width: 0%;
+        text-align: right;
+        margin: 0 auto;
+    }
+    .overlay {
+        height: 100%;
+        padding-top: 0;
+        position: fixed;
+        z-index: 2;
+        right: 0;
+        top: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.75s;
+    }
+
+    .overlay .closebtn {
+        text-align: right;
+        padding-top: .50em;
+        padding-right: .50em;
+        font-size: 60px;
+    }
+
+    .openbtn {
+        text-align: right;
+        font-size: 3em;
+        color: dimgray;
+        text-decoration: none;
+        padding: 15px;
+    }
+
+    .overlayContent {
+        position: block;
+        top: 25%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlayContent ul {
+        padding-left: 0;
+        padding: 1.5em;
+        list-style-type: none;
+    }
+
+    .overlayContent ul li {
+        text-align: right;
+        letter-spacing: .25em;
+        padding: 1em;
+    }
+
+    .overlayContent ul li a {
+        font-size: 2em;
+        display: block;
+    }
+
+    #homeinfo {
+        background-image: url(resources/solonotebook_mobile.jpg);
+        padding-top: 0em;
+        width: 100%;
+        display: inline-flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+
+    #homeinfo h1 {
+        position: static;
+        padding: 20px;
+        text-align: center;
+        margin-top: 200px;
+    }
+
+    .homeinfo {
+        margin: 0 auto;
+        width: 350px;
+        height: 450px;
+        margin-bottom: 20px;
+    }
+
+    .homeinfo img {
+        padding: 0;
+        padding-top: 0;
+    }
+
+    .homeinfo p {
+        font-family: 'Exo 2', sans-serif;
+        font-weight: 300;
+        padding: 20px;
+        height: auto;
+        text-align: justify;
+        padding-top: 0;
+        margin: 10px;
+    }
+
+    .homeinfo h2 {
+        letter-spacing: .15em;
+        margin-bottom: 0;
+    }
+
+    .card {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .card h1 {
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .card img {
+        padding-left: 0px;
+    }
+
+    .cardtext {
+        width 100%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .cardtext p {
+        margin: 0 auto;
+        text-align: justify;
+        width: auto;
+        padding: 25px;
+    }
+
+    #portfolio {
+        background-image: url(resources/large_desk_openwall_mobile.png);
+    }
+
+    #portfolio h1 {
+        padding-left: 50px;
+    }
+
+    #portfolio h2 {
+        padding-left: 50px;
+        padding-top: 0px;
+        text-decoration: underline;
+    }
+    .portfolioColumn {
+        margin: 0 auto;
+    }
+
+    .portfolioRow {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+
+
+    .portfolioCard {
+        margin: 0 atuo;
+        flex: 50%;
+        padding: 0 15px;
+        padding-bottom: 50px;
+        width: 320px;
+    }
+
+    .portfolioCard p {
+        text-align: justify;
+    }
+
+    .portfolioCard img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+    #contactp {
+        margin: 0 auto;
+        padding-bottom: 0px;
+    }
+
+    #contactp p {
+        padding: 0px;
+        text-align: center;
+    }
+
+    .footerinfo a {
+        text-decoration: none;
+        color: #ffffff;
+        padding: 0;
+        margin: 0;
+        transition: all .15s;
+    }
+
+    .footerinfo {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .footerinfo a:hover {
+        color: #000000;
+    }
+
+    footer p {
+        margin: 0;
+        padding: 5px;
+    }
+
+    footer {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        background-color: #9f9fa0;
+        color: #ffffff;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #homecontainer h1 {
+        margin: 0 auto;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 2em;
+        text-align: center;
+        padding: 0em;
+        padding-top: 50px;
+        padding-bottom: .25em;
+        color: #4f1d1e;
+    }
+
+
+    #homecontainer h2 {
+        font-size: 1.5em;
+        font-weight: 200;
+        text-align: left;
+        margin: 0 auto;
+        padding-left: 20px;
+        margin-bottom: 150px;
+    }
+
+    #homecontainer {
+        background-image: url(resources/blur-bottle-bright-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+        text-align: right;
+        display: block;
+    }
+
+    #button {
+        margin: 0em;
+        padding-left: 9em;
+        padding-right: 2em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .btn {
+        margin: 2emem;
+        padding: 0;
+        padding: 1em;
+        border: 2px solid dimgray;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.015em;
+        color: dimgray;
+        text-decoration: none;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.5s;
+    }
+
+
 }
