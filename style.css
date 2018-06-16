@@ -402,6 +402,7 @@ footer {
     body {
         width: 100%;
         margin: 0 auto;
+        scroll-behavior: smooth;
     }
 
     #container {
